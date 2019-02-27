@@ -1,0 +1,98 @@
+<%- include("partials/header"); -%>
+
+
+<div class="jumbotron jumbo_photo">
+    <h1 class="forest_text">Explanation of Hourly Rates</h1>
+    <p class="lead second_forest">Following are some pieces of information you might find useful when considering BC
+        Movers for a
+        residential move:</p>
+</div>
+<div class="container bit_photo">
+    <div class="column-layout">
+
+        <div class="main-column">
+            <h3>Loaction</h3>
+            <p>Junior 1 Bedroom Apt. (1 person) </p>
+            <p>Bedroom Apt. (1 person)</p>
+            <p>1 Bedroom Apt. (2 person) </p>
+            <p>2 Bedroom House </p>
+            <p>2 Bedroom Apt. (2 person)</p>
+            <p>2 Bedroom Apt. (Family)</p>
+            <p>3 Bedroom House</p>
+            <p> Bedroom Apt.</p>
+
+        </div>
+
+        <div class="sidebar-one">
+            <h3>2 Men</h3>
+            <p> 3 to 4 hours</p>
+            <p>3 to 5 hours </p>
+            <p> 4 to 6 hours</p>
+            <p> 5 to 9 hours</p>
+            <p> 7 to 9 hours</p>
+        </div>
+
+        <div class="sidebar-two">
+            <h3>3 Men</h3>
+            <p>Not normally required</p>
+            <p>Not normally required</p>
+            <p>Not normally required</p>
+            <p>4 to 6 hours</p>
+            <p>5 to 7 hours</p>
+            <p>5 to 8 hours</p>
+            <p>7 to 9 hours</p>
+            <p>8 to 10 hours</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <h1 align="center">Bitcoin Ticker</h1>
+    <form action="/index" method="POST">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="container bit_for">
+                    <div class="input-group input-group-lg bit_form">
+                        <input type="text" name="amount" class="form-control input_bitcoin"
+                            aria-label="Amount (to the nearest dollar)">
+                        <span class="input-group-addon">$</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <select name="crypto">
+            <option value="BTC">Bitcoin</option>
+            <option value="ETH">Ethureum</option>
+            <option value="LTC">Litecoin</option>
+        </select>
+
+        <select name="fiat">
+            <option value="USD">US Dollars</option>
+            <option value="GBP">Pounds</option>
+            <option value="EUR">Euro</option>
+            <option value="CAD">Canadian Dollar</option>
+        </select>
+
+        <button type="submit" name="button">Check</button>
+
+    </form>
+
+
+
+
+
+
+    <% if (amount){ %>
+    <p>The current date is <%= currentDate %> </p>
+    <h1><%= amount %> <%= crypto %> is currently worth <%= price %> <%= fiat %> </h1>
+
+    <% } %>
+</div>
+
+<%- include("partials/footer"); -%>

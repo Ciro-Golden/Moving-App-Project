@@ -1,0 +1,515 @@
+@import "~font-awesome/css/font-awesome.css";
+
+
+
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+h1 {
+  font-size: 5rem;
+}
+
+
+h2,
+h3 {
+  font-family: sans-serif;
+  color: black;
+  font-weight: bold;
+}
+p {
+  font-family: sans-serif;
+  font-size: 1.4rem;
+  color: black;
+}
+body {
+  background-color: lightblue;
+}
+
+.container-fluid {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    background-color: rgb(194, 234, 244);
+    color: black;
+    
+
+}
+.navbar-nav  li a:hover {
+    color: #1abc9c !important;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+}
+
+.footer p {
+	margin-top: 25px;
+	font-size: 12px;
+  color: #fff;
+}
+
+/* *********************************************************** */
+
+/****************************** FORM STYLING ********************************** */
+
+.container h3 a {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #00AE4D;
+  border-radius: 6px;
+  color: #FFFFFF;
+}
+
+.container h3 a:hover, .container table tr td button:hover {
+  background-color: #78F5AE;
+  color: #999999;
+}
+
+.container table {
+  width: 360px;
+} 
+
+.container table tr td {
+  padding: 5px;
+}
+
+.container table tr td input, .container table tr td textarea {
+  border: solid 1px #dddddd;
+  padding: 5px 10px;
+  border-radius: 6px;
+  width: 100%;
+  color: #777777;
+}
+
+.container table tr td button {
+  border: solid 1px #AABF5C;
+  background-color: #00AE4D;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.container form button {
+  border: solid 1px #CB2027;
+  background-color: #DD4B39;
+  border-radius: 6px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 10px 0;
+  padding: 10px 20px;
+}
+
+.container .list-table {
+  width: 360px;
+  border: solid 2px #DDDDDD;
+  border-spacing: 0;
+}
+
+.container .list-table th {
+  border-bottom: solid 2px #DDDDDD;
+}
+
+
+.move_form {
+  padding: 20px;
+  background-color: rgb(194, 234, 244);;
+  width: 400px;
+  border-radius: 6px;
+  margin-top: 10%;
+  margin-bottom: 2.5%;
+  border: black;
+  border-style: solid
+
+}
+
+
+/****************************** HOMEPAGE/ FRONT PAGE ********************************** */
+
+
+
+.img_homepage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#features {
+  background-color: rgb(194, 234, 244);
+}
+
+
+.svg-inline--fa {
+  color: #0816b9;
+  margin-bottom: 0.5rem;
+}
+
+.container-fluid {
+  padding: 7% 15%;
+  text-align: center;
+}
+
+p {
+  /* max-width: 210px; */
+  margin: 10px auto 10px auto;
+
+}
+
+svg:hover {
+  color: #02b8fa;
+}
+
+
+
+
+/* // Testimonal Section */
+
+.thumbnail {
+  background-color: lightskyblue;
+}
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 16rem;
+  /*The width of the picture will be brought down to smaller */
+  margin: 20px;
+  /* Adding a margin all around so that it has space away from the image. */
+  height: 16rem;
+  margin-left: 35%;
+
+}
+
+.img_javahut{
+  width: 40%;
+  margin-left: 30%;
+  margin-top: 5%;
+  
+}
+
+.panel_title {
+  text-align: center;
+}
+.panel-body {
+  text-align: center;
+}
+
+.panel-footer {
+  text-align: center;
+}
+.panel-info {
+  /* width: 75%; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.javahut_card {
+  height: 350px
+}
+
+#testi {
+  background-color: lightblue;
+  margin: 8% 4% 8% 4%;
+}
+
+
+.front_bio {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+.list-group-item {
+  height: 300px;
+  width: 30rem;
+  
+}
+
+.list-group {
+  text-align: initial;
+}
+
+#bioblurb {
+  background-color: rgb(194, 234, 244);
+  margin: 7% 0 7% 0;
+  font-size: 1.5rem;
+}
+
+
+#copyright {
+  background-color: rgb(194, 234, 244);
+}
+
+#footer_notes {
+  margin-top: -5.7%;
+}
+#moves_hire {
+  margin: 1% 0 0 0;
+}
+
+.move_heading {
+text-align: center;
+}
+.moves_postings {
+  width: 45%;
+}
+.hire_text {
+  font-size: 100px;
+  font-weight: bold;
+}
+.starting_content {
+  font-size: 20%;
+  text-align: center;
+  width: 58%;
+  
+}
+
+.clipboard {
+  text-align: center;
+  padding: 0 2% 0 2%;
+}
+
+.hire_text {
+  margin-top: 1%;
+}
+
+#moves_background {
+  background-image: url("/images/scienceworld.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -1.2%;
+}
+
+
+
+/* *******************   Posts Post ************** */
+
+.post_heading {
+  text-align: center;
+}
+
+.posts_post {
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+#posts_background {
+ background-image: url("/images/lions.jpg");
+ width: 100vw;
+ height: 100vh; 
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+ position: relative;
+ } 
+
+ .post_padding {
+   margin-top: 6%;
+ }
+
+
+ /* *******************  Create Post ************** */
+
+
+ #create_post {
+   background-image: url("/images/boxes-2.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   /* background-color: rgb(194, 234, 244);   */
+ }
+
+
+
+
+ /* *******************  Index Post ************** */
+
+
+ #moves_index {
+   background-image: url("/images/job_board.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   /* margin-top: 1%; */
+ }
+
+ .posting_form {
+  padding: 20px;
+  background-color: rgb(194, 234, 244);;
+  width: 400px;
+  border-radius: 6px;
+  margin-top: 24%;
+  margin-bottom: 10%;
+  border: black;
+  border-style: solid
+ }
+
+  /* *******************  Edit Post ************** */
+
+ 
+  .edit_one {
+    background-image: url("/images/edit_page.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+
+    
+    
+  }
+
+
+
+  .form-compose {
+    width: 80%;
+
+  }
+
+  .worker_write {
+    background-image: url("/images/vancouver.jpeg");
+    background-repeat: no-repeat;
+    background-size: 200% 200%;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh; 
+  }
+
+
+    /* *******************  Rates CSS  ************** */
+
+    .column-layout {
+      max-width: 1300px;
+      background-color: rgb(194, 234, 244);
+      margin: 30px auto 0 auto;
+      line-height: 1.65;
+      /* padding: 25px 50px; */
+      display: flex;
+    }
+
+    .main-column {
+      flex: 1;
+      order: 2;
+      /* margin-right: 10%; */
+      /* text-align: center; */
+      
+    }
+
+    .sidebar-one{
+      flex: 1;
+      order: 1;
+      text-align: center;
+      padding-right: 10%;
+      
+    }
+
+    .sidebar-two{
+      flex: 1;
+      order: 3;
+      text-align: center;
+      
+    }
+
+    .bit_photo {
+      background-image: url("/images/bitphoto.jpeg");
+      flex: 1;
+      margin-top: -2%;
+      background-size: cover;
+      width: 100vw;
+      height: 68vh;
+      padding-bottom: 5%; 
+    }
+
+    .jumbo_photo {
+      background-image: url("/images/mist_van.jpeg");
+      background-position: 0% 76%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      font-weight: bolder;
+    }
+
+    .forest_text {
+      position: relative;
+      display: block;
+      text-align: center;
+
+    }
+    .second_forest {
+      position: relative;
+      display: block;
+      padding-bottom: 40px;
+      text-shadow:
+        0.02em 0 black,
+        0 0.02em black,
+        -0.02em 0 black,
+        0 -0.02em black,
+        -0.03em -0.02em black,
+        -0.03em 0.02em black,
+        0.03em -0.02em black,
+        0.03em 0.02em black;
+        text-align: center;
+    }
+
+   
+
+
+    select[name=crypto] {
+      margin-left: 81%;
+      width: 100px;
+      height: 35px;
+    }
+
+    select[name=fiat] {
+      width: 100px;
+      height: 35px;
+    }
+
+    .bit_for {
+      margin-left: 204%;
+      width: 100%;
+    }
+
+
+        /* *******************  CONTACT PAGE  ************** */
+
+
+
+
+
+.contact_image {
+  -webkit-box-flex: 1;  /* OLD - iOS 6-, Safari */
+  flex-basis: 50%;
+  flex-grow: 1;
+ 
+}
+.contact_image img {width: 100%;}
+
+.contact_content {
+  font-size: 3rem;
+  text-align: center;
+  padding-left: 22%;
+  padding-right: 22%;
+}

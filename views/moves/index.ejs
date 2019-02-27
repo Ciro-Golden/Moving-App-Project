@@ -1,0 +1,39 @@
+<%- include("../partials/header"); -%>
+
+<title>Move List</title>
+
+<section class="white-section" id="moves_index">
+    <div class="container">
+        <div class="container posting_form">
+            <h3><a href="/moves/create">Create Move</a></h3>
+            <h1>Move List</h1>
+            <% if(moves.length>0) { %>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Move Name</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <% for(var i=0; i<moves.length;i++) { %>
+                    <tr>
+                        <td><a href="/moves/show/<%= moves[i]._id%>"><%= moves[i].user%></a></td>
+                        <td><%= moves[i].position%></td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+            <% } else { %>
+            <div>No move found.</div>
+            <% } %>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<%- include("../partials/footer"); -%>

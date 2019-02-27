@@ -1,0 +1,50 @@
+<%- include("../partials/header"); -%>
+
+<title>Edit Employee</title>
+
+<section class="white-section" id="edit_form">
+    <div class="container-fluid edit_one">
+        <div class="container move_form">
+            <h3><a href="/moves">Employee List</a></h3>
+            <h1>Edit Employee</h1>
+            <form action="/moves/update/<%= move._id%>" method="post">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>User</td>
+                            <td><input type="text" name="user" value="<%= move.user %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>Street</td>
+                            <td><input type="text" name="street" value="<%= move.street %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>City</td>
+                            <td><input type="text" name="city" value="<%= move.city %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>Province</td>
+                            <td><input type="number" name="province" value="<%= move.province %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>Rooms</td>
+                            <td><input type="number" name="rooms" value="<%= move.rooms %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>Movers</td>
+                            <td><input type="number" name="movers" value="<%= move.movers %>" /></td>
+                        </tr>
+                        <tr>
+                            <td>Comments</td>
+                            <td><textarea name="comments"><%= move.comments %></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit">Update</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    </div>
+</section>
+<%- include("../partials/footer"); -%>

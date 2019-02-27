@@ -1,0 +1,58 @@
+<%- include("../partials/header"); -%>
+
+<title>Move Details</title>
+<section class="white-section" id="showing_form">
+    <div class="container-fluid edit_one">
+        <div class="container move_form">
+            <h3><a href="/moves">Move List</a></h3>
+            <h1>Move Detail</h1>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>User</td>
+                        <td>:</td>
+                        <td><%= move.user %></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                        <td>:</td>
+                        <td><%= move.street %></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td>:</td>
+                        <td><%= move.city %></td>
+                    </tr>
+                    <tr>
+                        <td>Province</td>
+                        <td>:</td>
+                        <td><%= move.province %></td>
+                    </tr>
+                    <tr>
+                        <td>Rooms</td>
+                        <td>:</td>
+                        <td><%= move.rooms %></td>
+                    </tr>
+                    <tr>
+                        <td>Movers</td>
+                        <td>:</td>
+                        <td><%= move.movers %></td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                        <td>:</td>
+                        <td><%= move.comments %></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3><a href="/moves/edit/<%= move._id%>">EDIT</a></h3>
+            <form action="/moves/delete/<%= move._id%>" method="post">
+                <button type="submit">DELETE</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<%- include("../partials/footer"); -%>

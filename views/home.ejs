@@ -1,0 +1,42 @@
+<%- include("partials/header"); -%>
+
+
+<section class="white-section" id="moves_background">
+  <h1 style="text-align:center;font-weight:bold;text-decoration:underline; font-size: 88px;">Movers For
+    Hire!
+  </h1>
+  <div class="container hire_text">
+    <p class="starting_content"> <%= startingContent %> </p>
+  </div>
+
+  <br>
+  <div class="container clipboard">
+    <i class="fas fa-clipboard-list fa-6x board_list"></i>
+    <i class="fas fa-pen-nib fa-6x"></i>
+  </div>
+  <br>
+
+  <section class="white-section" id="moves_hire">
+    <div class="container moves_postings">
+      <div class="panel panel-info">
+
+
+
+        <%  posts.forEach(function(post){ %>
+        <div class="panel-heading move_heading">
+          <h1><%=post.title%></h1>
+        </div>
+        <div class="panel-body">
+          <p>
+            <%=post.content.substring(0, 100) + " ..."%>
+            <a href="/posts/<%=post._id%>">Read More</a>
+          </p>
+        </div>
+
+        <% }) %>
+      </div>
+    </div>
+  </section>
+</section>
+
+<%- include("partials/footer"); -%>

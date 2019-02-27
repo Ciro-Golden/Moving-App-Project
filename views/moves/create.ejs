@@ -1,0 +1,53 @@
+<%- include("../partials/header"); -%>
+
+<title>Create Employee</title>
+<link rel='stylesheet' href='/public/css/move.css' />
+<link rel='stylesheet' href='/public/css/styles.css' />
+
+
+<section class="white-section" id="create_post">
+    <div class="container move_form">
+        <h3><a href="/moves">Move List</a></h3>
+        <h1>Create New Move</h1>
+        <form action="/moves/save" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td>User</td>
+                        <td><input type="text" name="user" /></td>
+                    </tr>
+                    <tr>
+                        <td>Street</td>
+                        <td><input type="text" name="street"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>City</td>
+                        <td><input type="text" name="city" /></td>
+                    </tr>
+                    <tr>
+                        <td>Province</td>
+                        <td><input type="text" name="province" /></td>
+                    </tr>
+                    <tr>
+                        <td>Rooms</td>
+                        <td><input type="number" name="rooms" /></td>
+                    </tr>
+                    <tr>
+                        <td>Movers</td>
+                        <td><input type="number" name="movers" /></td>
+                    </tr>
+                    <tr>
+                        <td>Comments</td>
+                        <td><textarea name="comments"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Save" /></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</section>
+
+
+<%- include("../partials/footer"); -%>
